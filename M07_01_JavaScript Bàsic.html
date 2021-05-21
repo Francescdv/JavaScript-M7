@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Exercici 1</p>
+L'exercici consisteix a crear un fitxer anomenat ciber.html i mostrar per consola un 'Hola mundo' (per activar la consola ->; F12). Pista: Console.log()
+
+
+
+<script>
+    console.log("Hola Mundo");
+</script>
+
+
+<p>Exercici 2</p>
+Crea un alert que mostri el teu nom:
+
+<script>
+    //window.alert("Francesc Domingo");
+</script>
+
+
+<p>Exercici 3</p>
+Crea una variable que contingui el teu nom i un altre que contingui el teu cognom.
+<script>
+  
+  let nom= "Francesc";
+  let cognom= "Domingo";
+  let nomComplet= nom + " " + cognom
+  console.log(nomComplet);
+
+</script>
+
+
+<p>Exercici 4</p>
+Crea dos variables amb dos números i fes una suma entre ells.
+<script>
+ /* 
+  let num1= 10;
+  let num2= 5;
+
+  let suma = num1 + num2;
+  console.log(suma);
+*/
+</script>
+
+<p>Exercici 5</p>
+Crea una variable nota_examen juntament amb un alert que ens digui si l’examen ha estat aprovat o no juntament amb la nota. (caldrà utilitzar un condicional IF)
+
+<script>
+   /* let nota_examen = Number(prompt("Introdueix la nota del examen"));
+    if(nota_examen >= 5){
+     window.alert("Has aprovat")
+    
+    }else{window.alert("No has aprovat")} */
+
+</script>
+
+<p>Exercici 6</p>
+Reemplaça la paraula blau per la paraula verd del següent text "Tinc un cotxe de color blau." Després intenta fer-ho remplaçant les o per les u.
+
+<script>
+  
+  let text = "Tinc un cotxe de color blau"
+  text=text.replace("blau", "verd");
+  document.write(text + "</br>");
+  
+  let text2 = "Tinc un cotxe de color blau"
+  text2=text2.replaceAll("o", "u");
+  document.write(text2);
+
+
+</script>
+
+<p>Exercici 7</p>
+Donat el seguit llistat d'objectes 'taula', 'cadira', 'ordinador', 'libreta', per un bucle que mostri per pantalla cada objecte i la seva posició al llistat.
+<p> </p>
+
+<script>
+    let llistat = ["taula", "cadira", "ordinador","libreta"];
+    let i=0;
+
+    for(i; i<llistat.length;i++){
+
+        document.write(i+1 + " " + llistat[i] + "</br>")
+
+    }
+
+</script>
+
+<p>Exercici 8</p>
+Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: operador, valor1 i valor2. 
+Estructura de la funció que faci sumes, restes i multiplicacions. El resultat haurà de ser mostrar per pantalla.
+
+
+
+<p id="resposta"></p>
+
+
+
+
+<script>
+
+   
+    let num1 = parseInt(prompt("Número 1"));
+    let num2 = parseInt(prompt("Número 2"));
+    let operacio = prompt("Operació");
+
+    calculadora(num1, num2, operacio)
+    
+   
+
+    function calculadora(num1, num2, operador){
+
+        let resultat;
+  
+        switch(operacio){
+        case "+":
+            resultat=(num1 + num2);
+        break; 
+        case "-":
+        resultat=(num1 - num2);
+        break;
+        case "*":
+        resultat=(num1 * num2);
+        break;
+        case "/":
+        resultat=(num1 / num2);
+        break;
+        default:
+        document.getElementsByClassName("resposta").innerHTLM ="Error";
+
+
+    }
+
+     document.getElementById("resposta").innerHTML = resultat;
+    
+    
+    
+    }
+
+
+
+</script>
+
+
+</body>
+</html>
