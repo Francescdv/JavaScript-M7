@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Exercici 1</p>
+    Crea un array amb el teu nom on cada posició correspongui a una lletra.
+    Fes un bucle que recorri aquest array i mostri per consola cadascuna de les lletres.
+
+    <script>
+      /*  
+        let nom = "Francesc";
+        let arrayNom = nom.split("");
+    
+        let i=0
+
+        for(i; i<arrayNom.length; i++){
+            arrayNom[i];
+        }
+
+        console.log(arrayNom);
+
+       */
+    </script>
+
+
+<p>Exercici 2</p>
+
+Al bucle, si la lletra és una vocal imprimeix a la consola: ‘He trobat la VOCAL: __’. Sinó, imprimeix: ‘He trobat la CONSONTANT: __’.
+Si trobes un número, mostra per pantalla: ‘Els noms de persones no contenen el número: __’
+
+<script>
+
+    /*
+        
+    let nom = "Franc3sc";
+    let arrayNom = nom.split("");
+    let numeros = /[\d]/g;
+    let vocals = /[aeiou]/i;
+    let consonants = /([b-d]|[f-h]|[j-n]|[p-t]|[v-z])/i;
+
+    
+    
+
+    let i=0
+    for(i; i<arrayNom.length; i++){
+        
+        if(consonants.test(nom[i])==true){
+                console.log("He trobat la consonant" + " " + arrayNom[i]);
+
+            }
+        
+        else if(vocals.test(nom[i])==true){
+                console.log("He trobat la vocal" + " " + arrayNom[i]);
+
+            }
+           
+        else if(numeros.test(nom[i])==true){
+                console.log("Els noms de persones no contenen el número" + " " + arrayNom[i])
+
+            }
+
+        
+    }
+
+    */
+    
+
+</script>
+
+<p>Exercici 3</p>
+Emmagatzemar en array les lletres i nombre de vegades que apareixen. Utilitza el mètode map().
+
+<script>
+
+/*
+
+let nom = "Francesc Domingo Vazquez"
+let arrayNom = nom.split(""); 
+let nouArray = new Map();
+let contador;
+
+//.has comprovar si el valor existeix o no, torna true o false
+//indica a quina lletra s'ha de sumar 
+//En cas de que no hi sigui la lletra la posem al mapa amb els valors key (lletra i value (contador 1)) 
+
+arrayNom.map(lletra => {
+    if(nouArray.has(lletra)) {                               
+        contador = nouArray.get(lletra);                     
+        nouArray.set(lletra, contador + 1);
+    }else {nouArray.set(lletra, 1)}                          
+})
+
+console.log(nouArray);
+
+*/
+
+</script>
+
+
+<p>Exercici 4</p>
+Crea una altra array amb el teu cognom on cada posició correspongui a una lletra.
+Fusiona els dos arrays en un. A més, afegeix una posició amb un espai buit entre la primera i la segona. És a dir, partim de 'array name i surname i al acabar l’execució només tindrem una que es dirà fullName.
+
+
+<script>
+
+    /*
+    let nom = "Francesc"
+    let cognom = "Domingo"
+    let arrayNom = nom.split(""); 
+    let arrayCognom = cognom.split("");
+    let arrayNomComlpet = arrayNom.concat(" ", arrayCognom);
+    
+    console.log(arrayNomComlpet);
+
+*/
+
+</script>
+
+</body>
+</html>
